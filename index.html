@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Test</title>
+        <link rel="stylesheet" href="./assets/main.css" />
+    </head>
+    <body>
+        <div class="container">
+            <form action="/">
+                <h1>Silahkan di isi 😊</h1>
+                <div>
+                    <label for="nama">Nama:</label>
+                    <input
+                        type="text"
+                        id="nama"
+                        required=""
+                        placeholder="nama kamu"
+                    />
+                </div>
+                <div>
+                    <label>Suka pocky?</label>
+                    <div>
+                        <span>
+                            <input
+                                type="radio"
+                                id="pocky"
+                                name="pocky"
+                                value="suka"
+                                required=""
+                            />suka
+                        </span>
+                        <span>
+                            <input
+                                type="radio"
+                                id="pocky"
+                                name="pocky"
+                                value="enggak"
+                                required=""
+                            />Enggak
+                        </span>
+                    </div>
+                </div>
+                <div>
+                    <label>Suka coklat?</label>
+                    <div>
+                        <span>
+                            <input
+                                type="radio"
+                                id="coklat"
+                                name="coklat"
+                                value="suka"
+                                required=""
+                            />suka
+                        </span>
+                        <span>
+                            <input
+                                type="radio"
+                                id="coklat"
+                                name="coklat"
+                                value="enggak"
+                                required=""
+                            />Enggak
+                        </span>
+                    </div>
+                </div>
+                <div>
+                    <label for="lainnya">Ada suka yang lain?</label>
+                    <textarea
+                        name="teks"
+                        id="lainnya"
+                        cols="30"
+                        rows="5"
+                        placeholder="ketikkan sesuatu . . ."
+                    ></textarea>
+                </div>
+                <button type="submit">Kirim</button>
+            </form>
+            <div class="alert hidden">
+                <div class="loading-box hidden">
+                    <div class="loading"></div>
+                    <p>Loading . . .</p>
+                </div>
+                <p class="berhasil hidden"></p>
+                <p class="gagal hidden"></p>
+            </div>
+        </div>
+
+        <script src="./assets/main.js"></script>
+    </body>
+</html>
